@@ -28,7 +28,7 @@ def send_email(message: str, recipient: str,* ,sender = "university.help@gmail.c
             else:
                 print(f"НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса {sender} на адрес {recipient}\n")
         else:
-            print("ERROR\n")
+            print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}\n")
 
 
 send_email('Это сообщение для проверки связи', 'vasyok1337@gmail.com')
