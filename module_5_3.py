@@ -29,24 +29,28 @@ class House:
         else:
             return None
 
+    
     def __lt__(self, other):
         if isinstance(other, int) == True and isinstance(other, House) == True:
             return self.number_of_floor < other.number_of_floor
         else:
             return None
 
+    
     def __le__(self, other):
         if isinstance(other, int) == True and isinstance(other, House) == True:
             return self.number_of_floor <= other.number_of_floor
         else:
             return None
 
+    
     def __gt__(self, other):
         if isinstance(other, int) == True and isinstance(other, House) == True:
             return self.number_of_floor > other.number_of_floor
         else:
             return None
 
+    
     def __ge__(self, other):
         if isinstance(other, int) == True and isinstance(other, House) == True:
             return self.number_of_floor >= other.number_of_floor
@@ -67,17 +71,20 @@ class House:
         else:
             return None
 
+    
     def __radd__(self, value):
         if isinstance(value, int) == True:
             return self.number_of_floor + value
         else:
             return None
 
+    
     def __iadd__(self, value):
         if isinstance(value, int) == True:
             return self.number_of_floor + value
         else:
             return None
+
 
 h1 = House('ЖК Эльбрус', 10)
 h2 = House('ЖК Акация', 20)
